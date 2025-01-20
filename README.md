@@ -1,102 +1,121 @@
-# DNA Sequence GC Content Calculator
+# GC Content Analysis of *Lampyris noctiluca* Clones
 
 ## Overview
-The **DNA Sequence GC Content Calculator** is a Python-based project designed to calculate the GC content across large DNA sequences. GC content is the percentage of nucleotides in a DNA sequence that are either guanine (G) or cytosine (C). This metric is crucial for understanding genome stability, gene expression, and evolutionary relationships.
+This project focuses on analyzing the GC content of genomic sequences from *Lampyris noctiluca* (common glow-worm). By studying the GC content across different sequences, we aim to understand genome characteristics, including coding and noncoding regions, evolutionary adaptations, and potential functional elements like bioluminescence-related genes.
 
 ---
 
-## Features
-- Reads DNA sequences in FASTA format.
-- Calculates the GC content of individual sequences and the entire dataset.
-- Provides output in a clear and organized format for further analysis.
+## Data Summary
+The dataset contains four genomic sequences with varying GC content:
+| **Sequence ID** | **GC Content (%)** | **Description** |
+|------------------|--------------------|------------------|
+| MZ265787.1       | 28.50%            | AT-rich; likely noncoding or regulatory region. |
+| MZ265786.1       | 32.06%            | Slightly higher GC content; may represent mixed coding/noncoding region. |
+| MZ265784.1       | 41.61%            | GC-rich; possibly a protein-coding region or GC-rich gene. |
+| MZ265782.1       | 27.93%            | Strong AT bias; likely a noncoding or repetitive region. |
+| MZ265783.1       | 29.70%            | Near average GC content; potential regulatory or intergenic region. |
+| MZ265781.1       | 27.08%            | AT-dominant region; possibly noncoding or repetitive. |
+| MZ265779.1       | 34.34%            | GC-enriched; likely indicative of coding sequences. |
+| MZ265778.1       | 33.33%            | Moderate GC content; could represent coding DNA. |
+| MZ265776.1       | 27.87%            | AT-rich; likely a noncoding or repetitive region. |
+| MZ265774.1       | 29.79%            | Close to average GC content; potential regulatory region or intergenic DNA. |
+---
+
+## Objectives
+1. **Analyze GC Content**:
+   - Calculate and compare GC content across sequences.
+   - Identify regions with significant AT or GC biases.
+
+2. **Functional Implications**:
+   - Explore potential coding and noncoding regions based on GC content.
+   - Investigate links between GC-rich regions and protein-coding genes.
+
+3. **Evolutionary Insights**:
+   - Understand genome organization and potential adaptations of *Lampyris noctiluca*.
 
 ---
 
-## Requirements
+## Tools and Technologies
+- **Programming Language**: Python
+- **Libraries**: Biopython, Matplotlib
 
-To run the script, ensure you have the following installed:
+---
 
+## Methodology
+1. **Data Input**:
+   - DNA sequences are provided in a single FASTA file (`sequence.fasta`).
+
+2. **GC Content Calculation**:
+   - Developed a Python script to calculate GC content for each sequence.
+
+3. **Visualization**:
+   - Bar charts to illustrate GC content variations across sequences.
+
+4. **Interpretation**:
+   - Correlated GC content with potential genomic functions and evolutionary traits.
+
+---
+
+## Results
+- **Average GC Content**:
+  - The dataset has an average GC content of 32.52%, indicating an AT-rich genome.
+- **Sequence Variability**:
+  - GC content ranges from 27.93% to 41.61%, highlighting differences in genomic regions.
+
+---
+
+## Key Findings
+- **Functional Regions**:
+  - GC-rich regions (e.g., 41.61%) likely represent protein-coding genes.
+  - AT-rich regions may correspond to noncoding or regulatory sequences.
+
+- **Bioluminescence Genes**:
+  - Further analysis could focus on identifying genes related to *luciferase*, a key enzyme for bioluminescence.
+
+- **Evolutionary Insights**:
+  - The AT-rich genome aligns with known characteristics of many insect species.
+
+---
+
+## How to Use
+### Requirements
 - Python 3.6+
-- Required Python libraries:
-  - `biopython`
-  - `argparse`
+- Required Libraries:
+  ```bash
+  pip install biopython matplotlib
+  ```
 
-Install dependencies using:
-```bash
-pip install biopython argparse
-```
-
----
-
-## Usage
-
-### Input
-- Input DNA sequences must be in FASTA format.
-
-### Running the Script
+### Run the Script
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Sravz2433/GC-content-calculator.git
-   cd GC-content-calculator
+   git clone https://github.com/your-repo/gc-content-analysis.git
+   cd gc-content-analysis
    ```
 
 2. Run the script:
    ```bash
-   python gc_calculator.py --input <input_file.fasta>
+   python gc_calculator.py --input sequence.fasta
    ```
 
-3. Example:
-   ```bash
-   python gc_calculator.py --input example_sequences.fasta
-   ```
-
-### Output
-- The script outputs the GC content for each sequence and the average GC content across the dataset.
+3. Output:
+   - GC content for each sequence.
+   - Average GC content for the dataset.
 
 ---
 
-## Example Output
-
-Input file: `example_sequences.fasta`
-
-```
->sequence_1
-ATGCGCCTAG
->sequence_2
-TTATTGCGGA
-```
-
-Output:
-```
-Sequence: sequence_1, GC Content: 60.0%
-Sequence: sequence_2, GC Content: 50.0%
-Average GC Content: 55.0%
-```
-
----
-
-## Repository Structure
-```
-GC-content-calculator/
-├── gc_calculator.py      # Main Python script
-├── example_sequences.fasta  # Sample input file
-├── README.md             # Project documentation
-└── requirements.txt      # Python dependencies
-```
-
----
-
-## Contributing
-Contributions are welcome! If you find a bug or have an idea for an enhancement, please submit an issue or pull request.
-
----
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Future Work
+- Extend analysis to larger datasets.
+- Functional annotation of GC-rich regions.
+- Investigate bioluminescence-related genes and their evolutionary significance.
 
 ---
 
 ## Author
-- **Sravya Sri Mallampalli**  
+- **Sravya Sri Mallampalli**
   - [GitHub Profile](https://github.com/Sravz2433)
   - [LinkedIn](https://www.linkedin.com/in/sravya-sri-mallampalli)
+
+---
+
+## License
+This project is licensed under the MIT License.

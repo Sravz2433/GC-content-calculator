@@ -1,0 +1,13 @@
+
+Processing file: sequence.fasta
+Sequence: MZ265787.1, GC Content: 28.50%
+Sequence: MZ265786.1, GC Content: 32.06%
+Sequence: MZ265784.1, GC Content: 41.61%
+Sequence: MZ265782.1, GC Content: 27.93%
+Sequence: MZ265783.1, GC Content: 29.70%
+Sequence: MZ265781.1, GC Content: 27.08%
+Sequence: MZ265779.1, GC Content: 34.34%
+Sequence: MZ265778.1, GC Content: 33.33%
+Sequence: MZ265776.1, GC Content: 27.87%
+Sequence: MZ265774.1, GC Content: 29.79%
+Average GC Content for sequence.fasta: 31.22%
