@@ -1,6 +1,4 @@
-# Correcting and writing the README content to a .md file
-
-readme_content = """# GC Content Analysis of *Lampyris noctiluca* Clones
+# GC Content Analysis of *Lampyris noctiluca* Clones
 
 ## Overview
 This project analyzes the GC content of genomic sequences from *Lampyris noctiluca* (common glow-worm). The goal is to understand genome characteristics, such as coding and noncoding regions, evolutionary adaptations, and potential functional elements, particularly those related to bioluminescence.
